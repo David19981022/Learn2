@@ -1,0 +1,3221 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333333;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent
+}
+
+@media only screen and (max-width: 414px),
+only screen and (max-device-width: 414px) {
+    html,
+    body {
+        font-size: 22px
+    }
+}
+
+@media only screen and (max-width: 400px),
+only screen and (max-device-width: 400px) {
+    html,
+    body {
+        font-size: 21.33px
+    }
+}
+
+@media only screen and (max-width: 375px),
+only screen and (max-device-width: 375px) {
+    html,
+    body {
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 360px),
+only screen and (max-device-width: 360px) {
+    html,
+    body {
+        font-size: 19.2px
+    }
+}
+
+@media only screen and (max-width: 320px),
+only screen and (max-device-width: 320px) {
+    html,
+    body {
+        font-size: 17px
+    }
+}
+
+/* 音频 */
+
+.music_icon {
+    position: fixed;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../images/music_icon1.png) no-repeat;
+    background-size: 1.8rem 3.6rem;
+    z-index: 999;
+    right: 0.375rem;
+    top: 0.375rem
+}
+
+.music_icon.mute {
+    background-position: left bottom
+}
+
+/* ----------------- */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    display: none
+}
+
+/* 加载页 */
+
+.ld_page {
+    background: #fff
+}
+
+.ld_page .ld_wrap {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    margin-left: -9.375rem;
+    width: 18.75rem;
+    height: 20.3rem;
+    background: url(../images/lianjia_ld_bg.jpg) no-repeat;
+    background-size: 100%
+}
+
+.ld_page .ld_wrap .ld_starbox {
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
+    width: 8rem;
+    height: 8rem
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star1 {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star2 {
+    position: absolute;
+    top: 1.25rem;
+    left: 4rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star3 {
+    position: absolute;
+    top: 5.5rem;
+    left: 0.25rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star4 {
+    position: absolute;
+    top: 3.5rem;
+    left: 1.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star5 {
+    position: absolute;
+    top: 5.7rem;
+    left: 6rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star6 {
+    position: absolute;
+    top: 1.5rem;
+    left: 7.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star7 {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_starbox .ld_star8 {
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-image: url(../images/lianjia_ld_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_wrap .ld_peobox {
+    position: absolute;
+    top: 8rem;
+    left: 9rem;
+    width: 1.225rem;
+    height: 1.85rem;
+    z-index: 11
+}
+
+.ld_page .ld_wrap .ld_peobox .ld_peo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.ld_page .ld_wrap .ld_peobox .ld_peo_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_ld_img.png) no-repeat;
+    background-size: 4.9rem 1.85rem;
+    -webkit-animation: ld_peo_inner 1s steps(4) infinite
+}
+
+.ld_page .ld_wrap .ld_peobox .peo_touying {
+    position: absolute;
+    top: 2rem;
+    left: -0.2rem;
+    width: 1.85rem;
+    height: 0.85rem;
+    background-image: url(../images/lianjia_peo_touying.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ld_page .ld_text_wrap {
+    position: absolute;
+    text-align: center;
+    top: 1.5rem;
+    z-index: 1;
+    width: 100%;
+    font-size: 0.7rem
+}
+
+.ld_page .ld_text_wrap p {
+    position: absolute;
+    width: 1rem;
+    left: 50%
+}
+
+.ld_page .ld_text_wrap .ld_text1 {
+    margin-left: -1rem;
+    background: url(../images/text_collect.png) no-repeat 0rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    top: 1rem
+}
+
+.ld_page .ld_text_wrap .ld_text2 {
+    background: url(../images/text_collect.png) no-repeat -0.9rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    margin-left: 0rem
+}
+
+.ld_star1,
+.ld_star2,
+.ld_star7 {
+    -webkit-transform: scale(0.6);
+    -webkit-animation: a_glint3 2s linear 0.5s infinite alternate
+}
+
+.ld_star5,
+.ld_star6 {
+    -webkit-transform: scale(0.8);
+    -webkit-animation: a_glint2 2s linear 0.5s infinite alternate
+}
+
+.ld_star4 {
+    -webkit-animation: a_glint 2s linear infinite
+}
+
+.ld_star3,
+.ld_star8 {
+    -webkit-animation: a_fast 2s linear 0.5s infinite alternate
+}
+
+.ld_peo {
+    -webkit-animation: a_ld_peo 2s linear infinite alternate
+}
+
+.peo_touying {
+    -webkit-animation: a_ld_touying 3s linear infinite alternate
+}
+
+.ld_text2 {
+    -webkit-animation: a_ld_text 1.5s ease-out 0.3s both
+}
+
+.ld_text1 {
+    -webkit-animation: a_ld_text 1.5s ease-out 0.8s both
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* 页面一================================================== */
+
+/* 背景动画 */
+
+.p1active {
+    -webkit-animation: a_boxshadow 0.8s linear 0s infinite alternate
+}
+
+.page1 {
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9eabb8), to(#ede5e6))
+}
+
+/* 三角 */
+
+.page1 .p1_triangle {
+    position: absolute;
+    top: 8.75rem;
+    left: 50%;
+    margin-left: -1.55rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    background-image: url(../images/lianjia_p1_triangle.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 三角旋转 */
+
+.p1_triangle {
+    -webkit-transform-origin: 1.25rem 1.75rem;
+    -webkit-animation: a_rotate 8s linear 0s infinite
+}
+
+/* 三角形结束 */
+
+/* 球 */
+
+.page1 .p1_bal {
+    position: absolute;
+    top: 9.35rem;
+    left: 7.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%
+}
+
+.page1 .p1_bal .p1_balone {
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%
+}
+
+.page1 .p1_text {
+    position: absolute;
+    top: 12.5rem;
+    width: 6.25rem;
+    height: 1.25rem;
+    right: 0rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #fff;
+    z-index: 1000
+}
+
+/*球 阴影 */
+
+.p1_balone {
+    -webkit-animation: a1_ball_box 1s linear 0s infinite
+}
+
+/* 球结束 */
+
+/* 方块，人物 */
+
+.page1 .p1_box {
+    position: absolute;
+    left: 50%;
+    margin-left: -4.4rem;
+    width: 8.8rem;
+    height: 9.85rem;
+    bottom: -2rem
+}
+
+.page1 .p1_box .p1_ball {
+    position: absolute;
+    top: -3.75rem;
+    left: 3.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 100%;
+    z-index: 11
+}
+
+.page1 .p1_box .p1_ball .p1_dotted {
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    margin-left: -0.525rem;
+    width: 1.05rem;
+    height: 1.05rem;
+    border: 1px dotted #0fd077;
+    border-radius: 100%
+}
+
+.page1 .p1_box .p1_ball .p1_dotted .p1_baltwo {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%
+}
+
+.page1 .p1_box .hide_box .p1_box_inner {
+    opacity: 0
+}
+
+.page1 .p1_box .p1_box_item1 {
+    position: absolute;
+    left: 1.75rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item2 {
+    position: absolute;
+    top: 0.48rem;
+    left: 2.6rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 2;
+    overflow: hidden
+}
+
+.page1 .p1_box .p1_box_item2 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item3 {
+    position: absolute;
+    top: 0.94rem;
+    left: 3.4rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 3;
+    overflow: hidden
+}
+
+.page1 .p1_box .p1_box_item3 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item4 {
+    position: absolute;
+    top: 1.43rem;
+    left: 4.25rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 4;
+    overflow: hidden
+}
+
+.page1 .p1_box .p1_box_item4 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item5 {
+    position: absolute;
+    top: 1.91rem;
+    left: 5.1rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 5
+}
+
+.page1 .p1_box .p1_box_item6 {
+    position: absolute;
+    top: 2.32rem;
+    left: 4.4rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 6
+}
+
+.page1 .p1_box .p1_box_item6 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item7 {
+    position: absolute;
+    top: 2.82rem;
+    left: 3.55rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 7;
+    overflow: hidden
+}
+
+.page1 .p1_box .p1_box_item7 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item8 {
+    position: absolute;
+    top: 3.28rem;
+    left: 2.75rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 8
+}
+
+.page1 .p1_box .p1_box_item9 {
+    position: absolute;
+    top: 3.76rem;
+    left: 1.9rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 9;
+    overflow: hidden
+}
+
+.page1 .p1_box .p1_box_item9 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item10 {
+    position: absolute;
+    top: 4.22rem;
+    left: 1.1rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 10
+}
+
+.page1 .p1_box .p1_box_item10 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item11 {
+    position: absolute;
+    top: 4.68rem;
+    left: 0.3rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 11
+}
+
+.page1 .p1_box .p1_box_item12 {
+    position: absolute;
+    top: 5.15rem;
+    left: 1.1rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 12
+}
+
+.page1 .p1_box .p1_box_item12 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item13 {
+    position: absolute;
+    top: 5.6rem;
+    left: 1.9rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 13
+}
+
+.page1 .p1_box .p1_box_item13 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item14 {
+    position: absolute;
+    top: 6.1rem;
+    left: 2.75rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 14
+}
+
+.page1 .p1_box .p1_box_item15 {
+    position: absolute;
+    top: 6.47rem;
+    left: 3.4rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 15
+}
+
+.page1 .p1_box .p1_box_item15 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item16 {
+    position: absolute;
+    top: 6.95rem;
+    left: 4.25rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 16
+}
+
+.page1 .p1_box .p1_box_item17 {
+    position: absolute;
+    top: 7.41rem;
+    left: 5.05rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    z-index: 17
+}
+
+.page1 .p1_box .p1_box_item17 .p1_box_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .p1_box_item18 {
+    position: absolute;
+    top: 7.8rem;
+    left: 5.75rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 18
+}
+
+/* 人物 */
+
+.page1 .p1_box .p1_peobox {
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    width: 1.225rem;
+    height: 1.85rem;
+    z-index: 111
+}
+
+.page1 .p1_box .p1_peo {
+    position: absolute;
+    top: 0.125rem;
+    left: 0.375rem;
+    width: 0.55rem;
+    height: 1.55rem;
+    background-image: url(../images/lianjia_p1_peo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page1 .p1_box .people_right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page1 .p1_box .people_right .people_right_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_people_right.png) no-repeat;
+    background-size: 13.475rem 1.85rem
+}
+
+.page1 .p1_box .people_left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page1 .p1_box .people_left .people_left_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_people_left.png) no-repeat;
+    background-size: 13.475rem 1.85rem
+}
+
+.play.page1 .people_right {
+    -webkit-animation: a1_people_right 6s linear 0s both
+}
+
+.play.page1 .people_left {
+    -webkit-animation: a1_people_left 6s linear 0s both
+}
+
+.play.page1 .p1_peobox {
+    -webkit-animation: a1_people_box 6s linear 0s both
+}
+
+/* 人物结束 */
+
+/* 手势 */
+
+.page1 .p1_hand_wrap {
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999
+}
+
+.page1 .p1_hand_wrap .p1_hand {
+    position: absolute;
+    width: 2.15rem;
+    height: 1.45rem;
+    top: 10.25rem;
+    left: 9rem;
+    background: url(../images/lianjia_p1_hand.png) no-repeat;
+    background-size: 100%
+}
+
+.p1_hand {
+    -webkit-animation: a1_hand 4s linear 2
+}
+
+.play.p1_hand_wrap {
+    -webkit-animation: fadeOut 1s ease-out 7s both
+}
+
+/* 手势结束 */
+
+/* 文字 */
+
+.page1 .p1_text_wrap {
+    color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 1rem
+}
+
+.page1 .p1_text_wrap p {
+    width: 1rem;
+    margin-bottom: 0.2rem;
+    position: absolute;
+    z-index: 1;
+    left: 50%
+}
+
+.page1 .p1_text_wrap .p1_text1 {
+    margin-left: -1.2rem;
+    background: url(../images/text_collect.png) no-repeat -9.5rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    top: 1rem
+}
+
+.page1 .p1_text_wrap .p1_text2 {
+    background: url(../images/text_collect.png) no-repeat -10.5rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    margin-left: 0rem
+}
+
+.people_left_inner {
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.people_right_inner {
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.play.page1 .p1_text_in {
+    -webkit-animation: fadeIn 1s ease-out 0.3s both
+}
+
+/* 方块出现动画 */
+
+.play.page1 .p1_box .p1_box_item2 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 0s both
+}
+
+.play.page1 .p1_box .p1_box_item3 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 0.2s both
+}
+
+.play.page1 .p1_box .p1_box_item4 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 0.4s both
+}
+
+.play.page1 .p1_box .p1_box_item6 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 0.6s both
+}
+
+.play.page1 .p1_box .p1_box_item7 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 0.8s both
+}
+
+.play.page1 .p1_box .p1_box_item9 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 1s both
+}
+
+.play.page1 .p1_box .p1_box_item10 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 1.2s both
+}
+
+.play.page1 .p1_box .p1_box_item12 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 1.4s both
+}
+
+.play.page1 .p1_box .p1_box_item13 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 1.6s both
+}
+
+.play.page1 .p1_box .p1_box_item15 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 1.8s both
+}
+
+.play.page1 .p1_box .p1_box_item17 .p1_box_inner {
+    -webkit-animation: p1_box 0.5s ease-out 2s both
+}
+
+.play.page1 .p1_peo {
+    -webkit-animation: fadeOut 0.2s linear 0s both
+}
+
+/* 页面二 */
+
+/* 星空 */
+
+.starbox {
+    width: 18.75rem;
+    height: 30.15rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem
+}
+
+.starbox .star1 {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star2 {
+    position: absolute;
+    top: 2.5rem;
+    left: 4rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star3 {
+    position: absolute;
+    top: 1rem;
+    left: 7rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star4 {
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star5 {
+    position: absolute;
+    top: 1.8rem;
+    left: 14rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star6 {
+    position: absolute;
+    top: 3.5rem;
+    left: 18rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star7 {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star8 {
+    position: absolute;
+    top: 6.25rem;
+    left: 13rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star9 {
+    position: absolute;
+    top: 6.5rem;
+    left: 0rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star10 {
+    position: absolute;
+    top: 10.5rem;
+    left: 9rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.starbox .star11 {
+    position: absolute;
+    left: 1rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 6.5rem
+}
+
+.starbox .star12 {
+    position: absolute;
+    left: 5rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 2rem
+}
+
+.starbox .star13 {
+    position: absolute;
+    left: 7rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 3.5rem
+}
+
+.starbox .star14 {
+    position: absolute;
+    left: 9rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 1rem
+}
+
+.starbox .star15 {
+    position: absolute;
+    left: 13.8rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 1.4rem
+}
+
+/* 星空结束  添加动画*/
+
+.glint_icon {
+    -webkit-animation: a_glint 2s linear 0s infinite alternate
+}
+
+.fast_icon {
+    -webkit-animation: a_glint 2s linear 1s infinite
+}
+
+.none_icon {
+    -webkit-animation: a_none 2s linear 0.5s infinite alternate
+}
+
+@-webkit-keyframes a_none {
+    0% {
+        opacity: 0.8
+    }
+    60% {
+        opacity: 0.5
+    }
+    100% {
+        opacity: 0.5
+    }
+}
+
+.page2 {
+    background: url(../images/lianjia_p2_bg.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+/* 文字 */
+
+.page2 .p2_text_wrap {
+    font-size: 0.7rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    text-align: center
+}
+
+.page2 .p2_text_wrap p {
+    width: 1rem;
+    position: absolute;
+    left: 50%
+}
+
+.page2 .p2_text_wrap .p2_text1 {
+    margin-left: -1.2rem;
+    background: url(../images/text_collect.png) no-repeat -2.3rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    top: 1rem
+}
+
+.page2 .p2_text_wrap .p2_text2 {
+    background: url(../images/text_collect.png) no-repeat -3.5rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    margin-left: 0rem
+}
+
+/* 文字结束 */
+
+/* 三只云 */
+
+.page2 .p2_wrap .p2_cloudone {
+    pointer-events: none;
+    position: absolute;
+    top: -4rem;
+    left: -19rem;
+    width: 18.75rem;
+    height: 15.2rem;
+    background-image: url(../images/lianjia_p2_cloudone.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page2 .p2_wrap .p2_cloudtwo {
+    pointer-events: none;
+    position: absolute;
+    top: 3rem;
+    left: -19rem;
+    width: 18.75rem;
+    height: 11.15rem;
+    background-image: url(../images/lianjia_p2_cloudtwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page2 .p2_wrap .p2_cloud {
+    pointer-events: none;
+    position: absolute;
+    left: -19rem;
+    width: 18.75rem;
+    height: 9.05rem;
+    background-image: url(../images/lianjia_p2_cloud.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 2rem
+}
+
+.p2_cloudone {
+    -webkit-animation: a_cloud 20s linear 0s infinite
+}
+
+.p2_cloud {
+    -webkit-animation: a_cloud 20s linear 6s infinite
+}
+
+.p2_cloudtwo {
+    -webkit-animation: a_cloud 20s linear 12s infinite
+}
+
+/* 三只云结束 */
+
+/* 框 */
+
+.page2 .p2_wrap .p2_litbox {
+    position: absolute;
+    top: 9.1rem;
+    left: 10.5rem;
+    width: 2.95rem;
+    height: 3.3rem
+}
+
+.page2 .p2_wrap .p2_litbox .p2_litone {
+    width: 2.95rem;
+    height: 3.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #69d7d1;
+    border-radius: 100%;
+    opacity: 0.5
+}
+
+.page2 .p2_wrap .p2_litbox .p2_littwo {
+    width: 1.7rem;
+    height: 1.95rem;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    border: 1px solid #69d7d1;
+    border-radius: 100%;
+    opacity: 0.5
+}
+
+.page2 .p2_wrap .p2_litbox .p2_lit {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 1.1rem;
+    left: 1.1rem;
+    border: 1px dotted #fff;
+    border-radius: 100%;
+    opacity: 0.5
+}
+
+.green_ball {
+    display: none;
+    background: url(../images/lianjia_green_ball.png) no-repeat;
+    background-size: 100%;
+    width: 0.95rem;
+    height: 0.95rem;
+    position: absolute;
+    left: -0.1rem;
+    top: -0.07rem
+}
+
+.p2_litone {
+    -webkit-animation: a_zoomtwo 1.5s linear 0s infinite;
+    opacity: 0
+}
+
+.p2_littwo {
+    -webkit-animation: a_zoomtwo 1.5s linear 0.5s infinite;
+    opacity: 0
+}
+
+/* 框结束 */
+
+/* 汽车 */
+
+.page2 .p2_wrap .p2_car {
+    position: absolute;
+    top: 8.75rem;
+    left: -10rem;
+    width: 9.8rem;
+    height: 6.5rem
+}
+
+.page2 .p2_wrap .p2_car .p2_car_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 9.8rem;
+    height: 6.5rem;
+    background-image: url(../images/lianjia_p2_car.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page2 .p2_wrap .p2_cartwo {
+    position: absolute;
+    top: 5.5rem;
+    left: -10rem;
+    width: 9.7rem;
+    height: 6.55rem
+}
+
+.page2 .p2_wrap .p2_cartwo .p2_cartwo_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 9.7rem;
+    height: 6.55rem;
+    background-image: url(../images/lianjia_p2_cartwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 汽车行走动画 */
+
+.p2_car_inner {
+    -webkit-animation: a_yidong 6s linear 2s infinite
+}
+
+.p2_cartwo_inner {
+    -webkit-animation: a_car 6s linear 0s infinite
+}
+
+/* 球进框后汽车的动画 */
+
+.play .p2_car {
+    -webkit-animation: a_yidong 4s linear 0s both
+}
+
+.play .p2_cartwo {
+    -webkit-animation: a_car 4s linear 0s both
+}
+
+/* animation-play-state 属性规定动画正在运行还是暂停。  */
+
+.paused {
+    -webkit-animation-play-state: paused
+}
+
+/* 汽车结束 */
+
+/* 人物 */
+
+.page2 .p2_wrap .p2_peo_box {
+    position: absolute;
+    top: 21.4rem;
+    left: 4.3rem;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page2 .p2_wrap .p2_peo {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 0.9rem;
+    height: 1.75rem;
+    opacity: 0
+}
+
+.page2 .p2_wrap .p2_peo .p2_peo_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 0.9rem;
+    height: 1.75rem;
+    background-image: url(../images/lianjia_p2_peo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page2 .p2_wrap .p2_peo1 {
+    position: absolute;
+    left: -0.2rem;
+    top: 0px;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page2 .p2_wrap .p2_peo2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page2 .p2_wrap .p2_peo1_box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page2 .p2_wrap .p2_peo1_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_a2_people.png) no-repeat;
+    background-size: 13.475rem 1.85rem;
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.page2 .p2_wrap .p2_peo2_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_p2_xbt.png) no-repeat;
+    background-size: 13.475rem 1.85rem;
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.play .p2_peo_inner {
+    -webkit-animation: fadeOut 0.1s linear 2s both
+}
+
+/* 站立 */
+
+.p2_peo {
+    -webkit-animation: fadeIn 0.5s linear 3s both
+}
+
+/* 人物进场动画 */
+
+.p2_peo1 {
+    -webkit-animation: a2_start 3s linear 0s both
+}
+
+/* 人行走动画 */
+
+.play .p2_peo1 {
+    -webkit-animation: p2_peo1 9s linear 2s both
+}
+
+.play .p2_peo2 {
+    -webkit-animation: a2_peo2 9s linear 2s both
+}
+
+/* 人物位移 */
+
+.play .p2_peo_box {
+    -webkit-animation: a2_people 9s linear 2s both
+}
+
+/* 人物结束 */
+
+/* 球 */
+
+.page2 .p2_wrap .p2_ballbox {
+    opacity: 0;
+    position: absolute;
+    top: 20.5rem;
+    left: 5.5rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 100%
+}
+
+.page2 .p2_wrap .p2_ballbox .p2_ball {
+    position: absolute;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(16, 206, 118, 0.8);
+    border-radius: 100%
+}
+
+.p2_ballbox {
+    -webkit-animation: fadeIn 0.5s linear 3.2s both
+}
+
+/* 阴影 */
+
+/* .p2_ball {
+    -webkit-animation: a2_ball_box 1.5s linear 0s infinite alternate
+} */
+
+/* 球结束 */
+
+/* 页面三开始======================================================== */
+
+.page3 {
+    background: url(../images/lianjia_p3_bg2.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+/* 文字 */
+
+.page3 .p3_text_wrap {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    font-size: 0.7rem
+}
+
+.page3 .p3_text_wrap p {
+    margin-bottom: 0.5rem;
+    width: 1rem;
+    position: absolute;
+    left: 50%
+}
+
+.page3 .p3_text_wrap .p3_text2 {
+    background: url(../images/text_collect.png) no-repeat -6.1rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    margin-left: 0rem
+}
+
+.page3 .p3_text_wrap .p3_text1 {
+    margin-left: -1.2rem;
+    background: url(../images/text_collect.png) no-repeat -4.8rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    top: 1rem
+}
+
+/* 文字结束 */
+
+/* 遮罩层 */
+
+.page3 .p3_wrap {
+    width: 100%;
+    height: 100%;
+    background: url(../images/lianjia_p3_bg1.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2
+}
+
+/* 球框 */
+
+.page3 .p3_wrap .p3_litbox {
+    width: 2.85rem;
+    height: 2.85rem;
+    position: absolute;
+    top: 4.1rem;
+    right: 4.65rem
+}
+
+.page3 .p3_wrap .p3_litbox .p3_litone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.85rem;
+    height: 2.85rem;
+    border: 1px dotted #575b60;
+    border-radius: 100%
+}
+
+.p3_litone {
+    -webkit-animation: a_zoomtwo 1.5s linear 0s infinite;
+    opacity: 0
+}
+
+.page3 .p3_wrap .p3_litbox .p3_littwo {
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    width: 1.85rem;
+    height: 1.85rem;
+    margin-left: -0.925rem;
+    border: 1px dotted #575b60;
+    border-radius: 100%
+}
+
+.p3_littwo {
+    -webkit-animation: a_zoomtwo 1.5s linear 0.5s infinite;
+    opacity: 0
+}
+
+.page3 .p3_wrap .p3_litbox .p3_lit {
+    position: absolute;
+    top: 0.9rem;
+    left: 50%;
+    width: 1.05rem;
+    height: 1.05rem;
+    margin-left: -0.525rem;
+    border: 1px dotted #fff;
+    border-radius: 100%
+}
+
+.page3 .p3_wrap .p3_litbox .p3_gable_ball {
+    top: 0rem;
+    left: 0rem
+}
+
+/* 球框结束 */
+
+/* 站立 */
+
+.page3 .p3_wrap .p3_peo {
+    position: absolute;
+    top: 26rem;
+    left: 2.125rem;
+    width: 0.9rem;
+    height: 1.75rem;
+    z-index: 2
+}
+
+.page3 .p3_wrap .p3_peo .p3_speo_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 0.9rem;
+    height: 1.75rem;
+    background-image: url(../images/lianjia_p2_peo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p3_speo_inner {
+    -webkit-animation: fadeIn 0.5s linear 2s both
+}
+
+/* 站立结束 */
+
+/* 追随灯光 */
+
+.page3 .p3_wrap .p3_peolit {
+    position: absolute;
+    top: 25rem;
+    left: 0rem;
+    width: 6.5rem;
+    height: 4.7rem;
+    background-image: url(../images/lianjia_p3_reolit.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 追随灯光结束 */
+
+/* 球 */
+
+.page3 .p3_wrap .p3_ballbox {
+    position: absolute;
+    left: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 5.6rem;
+    border-radius: 100%
+}
+
+.p3_ballbox {
+    -webkit-animation: fadeIn 0.5s linear 2.5s both
+}
+
+.page3 .p3_wrap .p3_ballbox .p3_ball {
+    position: absolute;
+    top: 0.625rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #02c162;
+    border-radius: 100%
+}
+
+/* 球阴影 */
+
+/* .p3_ball {
+    -webkit-animation: a2_ball_box 1.5s linear 0s infinite alternate
+} */
+
+/* 球结束 */
+
+/* 进场行走 */
+
+.page3 .p3_wrap .p3_speo1 {
+    position: absolute;
+    top: 26rem;
+    left: 2rem;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page3 .p3_wrap .p3_speo1 .p3_speo1ple_inner {
+    -webkit-animation: a1_peo 1s steps(11) infinite;
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_a2_people.png) no-repeat;
+    background-size: 13.475rem 1.85rem
+}
+
+.p3_speo1 {
+    -webkit-animation: a3_speo1 2s linear 0s both
+}
+
+/* 进场行走结束 */
+
+/* 流星*/
+
+.page3 .p3_wraptwo .p3_meteorone {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 1.65rem;
+    height: 1rem;
+    background-image: url(../images/lianjia_p3_meteor.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p3_meteorone {
+    -webkit-animation: a_liux 3.5s ease-out 1.7s infinite
+}
+
+.page3 .p3_wraptwo .p3_meteortwo {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 1.65rem;
+    height: 1rem;
+    background-image: url(../images/lianjia_p3_meteor.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p3_meteortwo {
+    -webkit-animation: a_liux1 3s ease-out 0s infinite
+}
+
+/* 流星结束 */
+
+/* 月亮 */
+
+.page3 .p3_wraptwo .p3_moon {
+    position: absolute;
+    top: 4.625rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-image: url(../images/lianjia_p3_moon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 5.2rem
+}
+
+.p3_moonlit {
+    -webkit-animation: a_zoomtwo 3s linear 0s infinite
+}
+
+.page3 .p3_wraptwo .p3_moonlit {
+    position: absolute;
+    top: 0rem;
+    left: 7rem;
+    width: 11.8rem;
+    height: 11.3rem;
+    background-image: url(../images/lianjia_p3_moonlit.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 月亮结束 */
+
+/* 窗口灯光 */
+
+.page3 .p3_wraptwo .p3_hos {
+    position: absolute;
+    top: 11.6rem;
+    width: 18.75rem;
+    height: 11.95rem
+}
+
+.page3 .p3_wraptwo .p3_hos .icon {
+    position: absolute;
+    width: 0.3rem;
+    height: 0.5rem;
+    background-image: url(../images/lianjia_p3_winlit.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 一楼 */
+
+.page3 .p3_wraptwo .p3_hos .hosone {
+    position: absolute;
+    top: 5.2rem;
+    width: 1.6rem;
+    height: 6.35rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosone .hosone_litone {
+    top: 0.95rem;
+    left: 0.2rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosone .hosone_littwo {
+    top: 1.3rem;
+    left: 0.75rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosone .hosone_litthree {
+    top: 2.75rem;
+    left: 0.2rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosone .hosone_litfour {
+    top: 3.95rem;
+    left: 0.2rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosone .hosone_litfive {
+    top: 5.5rem;
+    left: 0.75rem
+}
+
+/* 二楼 */
+
+.page3 .p3_wraptwo .p3_hos .hostwo {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.25rem;
+    width: 2.3rem;
+    height: 8.65rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hostwo .hostwo_litone {
+    top: 3.5rem;
+    left: 0.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hostwo .hostwo_littwo {
+    top: 2rem;
+    left: 1.03rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hostwo .hostwo_litthree {
+    top: 4.76rem;
+    left: 1.6rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hostwo .hostwo_litfour {
+    top: 6.26rem;
+    left: 1.01rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hostwo .hostwo_litfive {
+    top: 7.65rem;
+    left: 0.45rem
+}
+
+/* 三楼 */
+
+.page3 .p3_wraptwo .p3_hos .hosthree {
+    position: absolute;
+    top: 5.3rem;
+    left: 5.15rem;
+    width: 2.25rem;
+    height: 4.75rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosthree .hosthree_litone {
+    top: 0.9rem;
+    left: 0.37rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosthree .hosthree_littwo {
+    top: 2.08rem;
+    left: 0.37rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosthree .hosthree_litthree {
+    top: 2.78rem;
+    left: 1.50rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosthree .hosthree_litfour {
+    top: 2.4rem;
+    left: 0.95rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosthree .hosthree_litfive {
+    top: 3.65rem;
+    left: 0.95rem
+}
+
+/* 四楼 */
+
+.page3 .p3_wraptwo .p3_hos .hosfour {
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    width: 2.25rem;
+    height: 7rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfour .hosfour_litone {
+    top: 0.85rem;
+    left: 0.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfour .hosfour_littwo {
+    top: 3.2rem;
+    left: 0.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfour .hosfour_litthree {
+    top: 2.7rem;
+    left: 1.6rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfour .hosfour_litfour {
+    top: 1.75rem;
+    left: 1.05rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfour .hosfour_litfive {
+    top: 4.75rem;
+    left: 1.05rem
+}
+
+/* 五楼 */
+
+.page3 .p3_wraptwo .p3_hos .hosfive {
+    position: absolute;
+    top: 2.9rem;
+    left: 10.95rem;
+    width: 2.25rem;
+    height: 5.4rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfive .hosfive_litone {
+    top: 0.6rem;
+    left: 0.46rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfive .hosfive_littwo {
+    top: 3rem;
+    left: 0.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfive .hosfive_litthree {
+    top: 2.5rem;
+    left: 1.55rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfive .hosfive_litfour {
+    top: 1.55rem;
+    left: 1.05rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosfive .hosfive_litfive {
+    top: 3.3rem;
+    left: 1.05rem
+}
+
+/* 六楼 */
+
+.page3 .p3_wraptwo .p3_hos .hossix {
+    position: absolute;
+    top: 3.3rem;
+    left: 13.85rem;
+    width: 2.25rem;
+    height: 3.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hossix .hossix_litone {
+    top: 0.85rem;
+    left: 0.5rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hossix .hossix_littwo {
+    top: 2.6rem;
+    left: 0.45rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hossix .hossix_litthree {
+    top: 0.3rem;
+    left: 1.6rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hossix .hossix_litfour {
+    top: 1.76rem;
+    left: 1.06rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hossix .hossix_litfive {
+    top: 2.1rem;
+    left: 1.6rem
+}
+
+/* 七楼 */
+
+.page3 .p3_wraptwo .p3_hos .hosseven {
+    position: absolute;
+    top: 0.5rem;
+    left: 16.75rem;
+    width: 2rem;
+    height: 5.25rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosseven .hosseven_litone {
+    top: 0.82rem;
+    left: 0.52rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosseven .hosseven_littwo {
+    top: 3.22rem;
+    left: 0.52rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosseven .hosseven_litthree {
+    top: 2.7rem;
+    left: 1.6rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosseven .hosseven_litfour {
+    top: 1.7rem;
+    left: 1.05rem
+}
+
+.page3 .p3_wraptwo .p3_hos .hosseven .hosseven_litfive {
+    top: 3.56rem;
+    left: 1.05rem
+}
+
+/* 灯光闪烁动画 */
+
+.hosone_litone,
+.hosfive_litfive,
+.hosfour_litone {
+    -webkit-animation: a_lit 6s linear 0s infinite
+}
+
+.hosthree_litfour,
+.hosthree_littwo,
+.hossix_litthree {
+    -webkit-animation: a_lit1 6s linear 0.8s infinite
+}
+
+.hosone_litthree,
+.hosfive_littwo,
+.hossix_litone,
+.hosseven_litone {
+    -webkit-animation: a_lit 6s linear 1.4s infinite;
+    opacity: 0
+}
+
+.hosfour_littwo,
+.hossix_litthree,
+.hosseven_litfour {
+    -webkit-animation: a_lit1 6s linear 1.8s infinite
+}
+
+.hosthree_litthree,
+.hosfive_litthree,
+.hostwo_litfour {
+    -webkit-animation: a_lit 6s linear 2.6s infinite
+}
+
+.hosone_littwo,
+.hossix_litfive,
+.hosseven_litfive {
+    -webkit-animation: a_lit1 6s linear 3s infinite
+}
+
+.hosfour_litfour,
+.hostwo_litone,
+.hostwo_litthree {
+    -webkit-animation: a_lit 6s linear 3.6s infinite
+}
+
+/* 窗口灯光结束 */
+
+/* 路灯光 */
+
+.page3 .p3_wraptwo .p3_roadlamp {
+    position: absolute;
+    top: 19.8rem;
+    left: 3.7rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    background-image: url(../images/lianjia_p3_roadlamp.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p3_roadlamp {
+    -webkit-animation: a3_light 2s linear 0s infinite alternate
+}
+
+.page3 .p3_wraptwo .p3_roadlamptwo {
+    position: absolute;
+    top: 23.5rem;
+    left: 2.8rem;
+    width: 7.45rem;
+    height: 4.95rem;
+    background-image: url(../images/lianjia_p3_roadlamptwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p3_roadlamptwo {
+    -webkit-animation: a3_light 2s linear 0s infinite alternate
+}
+
+/* 路灯光结束 */
+
+/* 行走 */
+
+.page3 .p3_wraptwo .p3_peo1 {
+    position: absolute;
+    top: 25rem;
+    left: 2rem;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page3 .p3_wraptwo .p3_peo1 .p3_people_inner {
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_a2_people.png) no-repeat;
+    background-size: 13.475rem 1.85rem
+}
+
+.play .p3_peo1 {
+    -webkit-animation: a_down 7s linear 0s both
+}
+
+.p3_people_inner {
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+/* 行走结束 */
+
+/* 页面三结束 */
+
+/* 页面四开始=========================================== */
+
+.page4 {
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9eabb8), to(#ede5e6))
+}
+
+/* 文字 */
+
+.page4 .p4_text_wrap {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    width: 100%
+}
+
+.page4 .p4_text_wrap p {
+    margin-bottom: 0.5rem;
+    width: 1rem;
+    position: absolute;
+    left: 50%
+}
+
+.page4 .p4_text_wrap .p4_text1 {
+    margin-left: -1.2rem;
+    background: url(../images/text_collect.png) no-repeat -7.3rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    top: 1rem
+}
+
+.page4 .p4_text_wrap .p4_text2 {
+    background: url(../images/text_collect.png) no-repeat -8.6rem 0;
+    background-size: 12.75rem 7.1rem;
+    width: 1rem;
+    height: 7.1rem;
+    margin-left: 0rem
+}
+
+/* 文字结束 */
+
+/* 云彩 */
+
+.page4 .p4_wrap .p4_cloud {
+    pointer-events: none;
+    position: absolute;
+    left: -15rem;
+    width: 18.75rem;
+    height: 8.65rem;
+    background-image: url(../images/lianjia_p4_cloud.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page4 .p4_wrap .p4_cloudtwo {
+    pointer-events: none;
+    position: absolute;
+    top: 10rem;
+    left: -15.5rem;
+    width: 18.75rem;
+    height: 8.45rem;
+    background-image: url(../images/lianjia_p4_cloudtwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p4_cloud {
+    -webkit-animation: a_cloud 15s linear 0s infinite
+}
+
+.p4_cloudtwo {
+    -webkit-animation: a_cloud 15s linear 6s infinite
+}
+
+/* 云彩 */
+
+/* 房子 */
+
+.page4 .p4_wrap .p4_house {
+    opacity: 0;
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    margin-left: -5.1rem;
+    width: 10.2rem;
+    height: 18rem;
+    background-image: url(../images/lianjia_p4_house.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.active .p4_house {
+    -webkit-animation: a_house 0.5s ease-out 0.2s both
+}
+
+/* 关门 */
+
+.page4 .p4_wrap .p4_house .p4_doorone {
+    position: absolute;
+    top: 5.4rem;
+    left: 3.5rem;
+    width: 2.7rem;
+    height: 3.7rem;
+    background-image: url(../images/lianjia_p4_doorone.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page4 .p4_wrap .p4_house .p4_doorone .p4_litbox {
+    width: 1.65rem;
+    height: 1.65rem;
+    position: absolute;
+    top: 1.35rem;
+    left: 0.9rem
+}
+
+.page4 .p4_wrap .p4_house .p4_doorone .p4_litbox .p4_lit {
+    width: 1.65rem;
+    height: 1.65rem;
+    border: 1px dotted #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.p4_lit {
+    -webkit-animation: a_zoomtwo 1.5s linear 1s infinite;
+    opacity: 0
+}
+
+.p4_littwo {
+    -webkit-animation: a_zoomtwo 1.5s linear 1.5s infinite;
+    opacity: 0
+}
+
+.page4 .p4_wrap .p4_house .p4_doorone .p4_litbox .p4_littwo {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px dotted #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.63rem 0 0 -0.63rem
+}
+
+.page4 .p4_wrap .p4_house .p4_doorone .p4_litbox .p4_round {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #dbe3e5;
+    border: 1px dotted #dbe3e5;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.4rem 0 0 -0.4rem
+}
+
+.page4 .p4_wrap .p4_house .p4_doorone .p4_litbox .p4_roundtwo {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #fff;
+    border: 1px dotted #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.25rem 0 0 -0.25rem
+}
+
+.page4 .p4_wrap .p4_house .p4_green_ball {
+    z-index: 11;
+    left: 0.35rem;
+    top: 0.4rem
+}
+
+/* 关门结束 */
+
+/* 开门 */
+
+.page4 .p4_wrap .p4_house .p4_doortwo {
+    position: absolute;
+    top: 5.4rem;
+    left: 3.5rem;
+    width: 2.7rem;
+    height: 3.7rem;
+    background-image: url(../images/lianjia_p4_doortwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page4 .p4_wrap .p4_house .p4_doortwo .p4_door {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.25rem;
+    width: 2.2rem;
+    height: 3.4rem;
+    overflow: hidden;
+    z-index: 11;
+    border-radius: 0.8rem 0.8rem 0 0
+}
+
+.play.page4 .p4_door_inner {
+    -webkit-animation: leftDoor 1s ease-out 0s both
+}
+
+.page4 .p4_wrap .p4_house .p4_doortwo .p4_door .p4_door_inner {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 2.2rem;
+    height: 3.4rem;
+    background-image: url(../images/lianjia_p4_door1.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.page4 .p4_wrap .p4_house .p4_doortwo .p4_balone {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    z-index: 12
+}
+
+/* 开门球移动 */
+
+.play.page4 .p4_balone {
+    -webkit-animation: a4_balone 0.5s linear 0s both
+}
+
+.page4 .p4_wrap .p4_house .p4_doortwo .p4_balone .p4_bal {
+    position: absolute;
+    top: 0.005rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 100%
+}
+
+.play.page4 .p4_bal {
+    -webkit-animation: a5_start_ball 5s linear 5.2s both
+}
+
+.page4 .p4_wrap .p4_house .p4_doortwo .p4_balone .p4_bal .p4_bal_inner {
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #1db772;
+    border-radius: 100%
+}
+
+/* 球阴影 */
+
+/* .p4_bal_inner {
+    -webkit-animation: a2_ball_box 1.5s linear 0s infinite alternate
+} */
+
+/* 开着门结束 */
+
+/* 梯子 */
+
+.page4 .p4_wrap .p4_stair {
+    position: absolute;
+    top: 16.1rem;
+    width: 9.9rem;
+    height: 14.55rem;
+    background-image: url(../images/lianjia_p4_stair.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 0
+}
+
+.active .p4_stair {
+    -webkit-animation: a_stair 1.5s ease-out 0.5s both
+}
+
+/* 梯子结束 */
+
+/* 行走 */
+
+.page4 .p4_wrap .p4_peo {
+    position: absolute;
+    top: 23.4rem;
+    left: 4.1rem;
+    width: 0.75rem;
+    height: 1.8rem
+}
+
+.play.page4 .p4_peo {
+    -webkit-animation: a4_peo 5s linear 0s both
+}
+
+.page4 .p4_wrap .p4_peo .p4_peo_inner {
+    opacity: 0;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 0.75rem;
+    height: 1.8rem;
+    background-image: url(../images/lianjia_p4_peo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+/* 出现 */
+
+.play.page4 .p4_peo_inner {
+    -webkit-animation: fadeOut 0.1s linear 0s both
+}
+
+/* 走完隐藏 */
+
+.active .p4_peo_inner {
+    -webkit-animation: fadeIn 0.5s linear 3.8s both
+}
+
+.page4 .p4_wrap .p4_baltwo {
+    opacity: 0;
+    position: absolute;
+    top: 22rem;
+    left: 5.1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%
+}
+
+.active .p4_baltwo {
+    -webkit-animation: fadeIn 0.5s linear 4s both
+}
+
+.page4 .p4_wrap .p4_baltwo .p4_ball {
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 100%
+}
+
+/* 球阴影 */
+
+/* .p4_ball {
+    -webkit-animation: a2_ball_box 2.5s linear 0s infinite alternate
+} */
+
+.page4 .p4_wrap .p4_baltwo .p4_ball .p4_ball_inner {
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    margin-left: -0.475rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-image: url(../images/lianjia_green_ball.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #1db772;
+    border-radius: 100%
+}
+
+.page4 .p4_wrap .p4_peo1,
+.page4 .p4_wrap .p4_peo2 {
+    opacity: 0;
+    position: absolute;
+    left: -0.2rem;
+    top: 0.2rem;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+/* 右走 */
+
+.play.page4 .p4_peo1 {
+    -webkit-animation: a4_peo1 5s linear 0s both
+}
+
+.page4 .p4_wrap .p4_peo1_inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_a2_people.png) no-repeat;
+    background-size: 13.475rem 1.85rem;
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.page4 .p4_wrap .p4_peo2_inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_people_top.png) no-repeat;
+    background-size: 12.25rem 1.85rem;
+    -webkit-animation: a2_peo 1s steps(10) infinite
+}
+
+/* 上走 */
+
+.play.page4 .p4_peo2 {
+    -webkit-animation: a4_peo2 5s linear 0s both
+}
+
+/* 开场行走 */
+
+.page4 .p4_speo {
+    position: absolute;
+    left: -0.2rem;
+    top: 0.1rem;
+    width: 1.225rem;
+    height: 1.85rem
+}
+
+.page4 .p4_speo .p4_speo_inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.225rem;
+    height: 1.85rem;
+    background: url(../images/lianjia_a2_people.png) no-repeat;
+    background-size: 13.475rem 1.85rem;
+    -webkit-animation: a1_peo 1s steps(11) infinite
+}
+
+.active .p4_speo {
+    -webkit-animation: a4_speo 2.5s linear 1.5s both
+}
+
+/* 行走结束 */
+
+/* 页面四结束 */
+
+/* 页面五开始 */
+
+.page5 {
+    z-index: 100
+}
+
+.p5_area {
+    display: none;
+    pointer-events: none;
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.p5_area .p5_start_ball {
+    border-radius: 100%;
+    overflow: hidden;
+    background: #00ad66;
+    display: block;
+    left: 12.4rem;
+    top: 14rem;
+    width: 1.1rem;
+    height: 1.1rem
+}
+
+/* 背景图 */
+
+.p5_white_bg {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    background: #fff
+}
+
+.play .p5_white_bg {
+    -webkit-animation: fadeIn 4s ease 1.5s both
+}
+
+/* 背景图结束 */
+
+.p5_wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11
+}
+
+/* 房子 */
+
+.p5_wrap .p5_logobox {
+    position: absolute;
+    top: 7.75rem;
+    left: 50%;
+    margin-left: -4.575rem;
+    width: 9.15rem;
+    height: 9.15rem
+}
+
+.play .p5_logobox {
+    -webkit-animation: logoInUp 2s linear 5.1s both
+}
+
+.p5_wrap .p5_logobox .p5_box_bg {
+    opacity: 0;
+    border-radius: 1.8rem;
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    margin-left: -4.575rem;
+    width: 9.15rem;
+    height: 9.15rem;
+    background: #00b362
+}
+
+.play .p5_box_bg {
+    -webkit-animation: fadeIn 2s ease-in 7s both
+}
+
+/* 房子*/
+
+.p5_wrap .p5_logobox .logoone {
+    position: absolute;
+    top: 1.7rem;
+    left: 1.9rem;
+    width: 5.4rem;
+    height: 5.55rem;
+    background-image: url(../images/lianjia_logotwo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.play .logoone {
+    -webkit-animation: fadeIn 2s ease-in 7s both
+}
+
+/* 房子线条 */
+
+.p5_wrap .p5_logobox .logotwo {
+    position: absolute;
+    top: 1.75rem;
+    left: 50%;
+    margin-left: -2.7rem;
+    width: 5.4rem;
+    height: 5.55rem
+}
+
+.play .logotwo {
+    -webkit-animation: fadeOut 2s ease-in 7s both
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_1 {
+    width: 0.65rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 0rem;
+    overflow: hidden;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    background-clip: padding-box;
+    border-radius: 3rem;
+    z-index: 11
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_1 .logoT1_inner {
+    width: 0.65rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background: #00ad66;
+    border-radius: 3rem
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_2 {
+    width: 3.28rem;
+    height: 0.65rem;
+    position: absolute;
+    top: 0.7rem;
+    right: 0rem;
+    -webkit-mask-image: url("http://7xlbj9.com1.z0.glb.clouddn.com/lianjia_logo_bg.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-transform: rotate(34deg);
+    overflow: hidden;
+    z-index: 11
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_2 .logoT2_inner {
+    width: 3.28rem;
+    height: 0.65rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background: #00ad66;
+    border-radius: 2rem 0.6rem 0rem 1rem
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_3 {
+    width: 3.28rem;
+    height: 0.65rem;
+    position: absolute;
+    top: 0.7rem;
+    left: -0.1rem;
+    -webkit-mask-image: url("http://7xlbj9.com1.z0.glb.clouddn.com/lianjia_logo_bg1.png");
+    -webkit-mask-size: 100% 100%;
+    overflow: hidden;
+    -webkit-transform: rotate(-34deg);
+    z-index: 12
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_3 .logoT3_inner {
+    width: 3.28rem;
+    height: 0.65rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background: #00ad66;
+    border-radius: 1rem 1.6rem 0.8rem 1rem
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_4 {
+    width: 0.65rem;
+    height: 3.7rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 0rem;
+    overflow: hidden;
+    -webkit-mask-image: url("http://7xlbj9.com1.z0.glb.clouddn.com/lianjia_logo_bg2.png");
+    -webkit-mask-size: 100% 100%;
+    z-index: 12
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_4 .lotwo4_icon {
+    opacity: 0;
+    width: 0.2rem;
+    height: 0.65rem;
+    position: absolute;
+    top: 2.9rem;
+    left: 0.6rem;
+    background: #00ad66;
+    -webkit-transform: rotate(-40deg)
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_4 .logoT4_inner {
+    width: 0.65rem;
+    height: 3.7rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background: #00ad66;
+    border-radius: 0.7rem 0rem 0.5rem 0.5rem
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_5 {
+    width: 5.4rem;
+    height: 0.65rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    overflow: hidden;
+    -webkit-mask-image: url("http://7xlbj9.com1.z0.glb.clouddn.com/lianjia_logo_bg3.png");
+    -webkit-mask-size: 120% 110%;
+    z-index: 11
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_5 .logoT5_inner {
+    width: 5.4rem;
+    height: 0.65rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    background: #00ad66;
+    border-radius: 0rem 2rem 2rem 2rem
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_6 {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    bottom: 1.3rem;
+    right: 0.05rem;
+    border-radius: 100%;
+    z-index: 1
+}
+
+.p5_wrap .p5_logobox .logotwo .logotwo_6 .logoT6_inner {
+    -webkit-animation: a2_ball_box 1.5s linear 0s infinite alternate;
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    background: url(../images/lianjia_green_ball.png) #00ad66;
+    background-size: 100%;
+    border-radius: 100%
+}
+
+.play .logoT1_inner {
+    -webkit-animation: a1_lt1 0.8s ease-out 1s both
+}
+
+.play .logoT2_inner {
+    -webkit-animation: a1_lt2 0.9s ease-out 1.7s both
+}
+
+.play .logoT3_inner {
+    -webkit-animation: a1_lt3 0.9s ease-out 2.5s both
+}
+
+.play .logoT4_inner {
+    -webkit-animation: a1_lt4 0.9s ease-out 3.3s both
+}
+
+.play .logoT5_inner {
+    -webkit-animation: a1_lt5 1s ease-out 4.2s both
+}
+
+.play .logotwo_6 {
+    -webkit-animation: fadeIn 1s linear 1s both
+}
+
+/* 线条结束 */
+
+/* 文字 */
+
+.p5_wrap .p5_txt {
+    position: absolute;
+    top: 13rem;
+    left: 50%;
+    margin-left: -4.925rem;
+    width: 9.85rem;
+    height: 3.75rem
+}
+
+.p5_wrap .p5_txt p {
+    display: inline-block;
+    font-size: 1rem;
+    color: #1cb278;
+    line-height: 1.85rem;
+    letter-spacing: 0.1rem;
+    text-align: center
+}
+
+.p5_wrap .p5_txt p span {
+    margin: 0 0.3rem
+}
+
+.p5_wrap .p5_txt .p5_txtone {
+    position: absolute;
+    left: 50%;
+    margin-left: -4.925rem;
+    width: 9.85rem;
+    height: 1.875rem
+}
+
+.play .p5_txtone {
+    -webkit-animation: fadeIn 1s ease 9.5s both
+}
+
+.p5_wrap .p5_txt .p5_txttwo {
+    position: absolute;
+    left: 50%;
+    margin-left: -4.925rem;
+    width: 9.85rem;
+    height: 1.875rem;
+    bottom: 0rem
+}
+
+.play .p5_txttwo {
+    -webkit-animation: fadeIn 1s ease 10.5s both
+}
+
+/* 文字结束 */
+
+/* 二维码 */
+
+.p5_wrap .p5_qrcode {
+    position: absolute;
+    top: 17rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    width: 7.5rem;
+    height: 7.5rem
+}
+
+.p5_wrap .p5_qrcode img {
+    width: 100%
+}
+
+.play .p5_qrcode {
+    opacity: 0;
+    -webkit-animation: fadeIn 1.5s ease 12s both
+}
+
+/* 二维码 结束 */
+
+/* 点击 */
+
+.p5_wrap .p5_icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -6.375rem;
+    width: 12.75rem;
+    height: 1.75rem;
+    bottom: 3rem
+}
+
+.p5_wrap .p5_icon a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 5.65rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.75rem;
+    color: #1cb278;
+    text-align: center;
+    border: 1px solid #55c59a;
+    border-radius: 0.3rem
+}
+
+.p5_wrap .p5_icon .back_icon {
+    position: absolute;
+    width: 5.65rem;
+    height: 1.7rem
+}
+
+.play .back_icon {
+    -webkit-animation: textInLeft 1.5s ease 13.5s both
+}
+
+.p5_wrap .p5_icon .shair_icon {
+    position: absolute;
+    width: 5.65rem;
+    height: 1.7rem;
+    right: 0rem
+}
+
+.play .shair_icon {
+    -webkit-animation: textInRight 1.5s ease 13.5s both
+}
+
+/* 点击结束 */
+
+/* 分享回家之路 */
+
+.p5_shair {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999
+}
+
+/* 星空 */
+
+.p5_shair .p5_starbox {
+    position: absolute;
+    top: 1.5rem;
+    left: 5.5rem;
+    width: 12.2rem;
+    height: 5.3rem
+}
+
+.p5_shair .p5_starbox .p5_star1 {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star2 {
+    position: absolute;
+    top: 2.25rem;
+    left: 4rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star3 {
+    position: absolute;
+    top: 5.5rem;
+    left: 11.25rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star4 {
+    position: absolute;
+    top: 1.5rem;
+    left: 11.5rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star5 {
+    position: absolute;
+    top: 5.7rem;
+    left: 8rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star6 {
+    position: absolute;
+    top: 2.5rem;
+    left: 7.5rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star7 {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_shair .p5_starbox .p5_star8 {
+    position: absolute;
+    left: 7rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-image: url(../images/lianjia_p5_star.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_star1,
+.p5_star4,
+.p5_star6,
+.p5_star7 {
+    -webkit-animation: a_glint 2s linear infinite
+}
+
+.p5_star2,
+.p5_star3,
+.p5_star5,
+.p5_star8 {
+    -webkit-animation: a_glint 2s linear 1s infinite alternate
+}
+
+/* 星空结束 */
+
+/* 人物 */
+
+.p5_shair .p5_litbox {
+    position: absolute;
+    top: 1rem;
+    left: 11.5rem;
+    width: 6.85rem;
+    height: 6.85rem
+}
+
+/* 光 */
+
+.p5_shair .p5_litbox .p5_lit {
+    position: absolute;
+    width: 6.85rem;
+    height: 6.85rem;
+    background-image: url(../images/lianjia_p5_lit.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.p5_lit {
+    -webkit-animation: a_ld_touying 2s linear infinite alternate
+}
+/* 方块 */
+.p5_shair .p5_litbox .p5_box {
+    position: absolute;
+    top: 3rem;
+    left: 2.5rem;
+    width: 1.9rem;
+    height: 2.15rem;
+    background-image: url(../images/lianjia_p1_box.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* 人 */
+.p5_shair .p5_litbox .p5_peo {
+    position: absolute;
+    top: 2rem;
+    left: 2.8rem;
+    width: 0.9rem;
+    height: 1.75rem;
+    background-image: url(../images/lianjia_p5_peo.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}

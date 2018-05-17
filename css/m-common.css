@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/*公用部分*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, img, dl, dt, dd, table, th, td, blockquote, fieldset, div, strong, label, em, a, span, input{margin:0;padding:0; font-family:'微软雅黑','Arial';}
+
+/*在移动端给overflow:hidden 最好给 overflow-x：hidden;同时给到元素 height:100%;*/
+/*-webkit-overflow-scrolling:touch;解决在苹果机测试时上下滑动页面不卡顿*/
+html,body {height:100%;overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+ul li{list-style: none;}
+/*-webkit-tap-highlight-color:transparent;真机点击去除黑色背景*/
+a{text-decoration: none;color: #434343;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+em,i{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+input,textarea{outline: none;}
+.clearfix:after{display: block;clear: both;height: 0;visibility: hidden;font-size: 0;line-height: 0;content: "";}
+.clearfix{zoom:1;}
+/*文本超出一行显示省略号*/
+.ell{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;}
+/*盒图宽高=content+border  布局时明明一排的几个div的宽度和为总宽度却出现混乱，给每个div一个 box-sizing属性，属性值为：border-box；*/
+.border-box{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+/*头部 */
+
+
+/*底部*/
+
+/*登录注册弹框*/
+
+
+/*轮播图*/
+
